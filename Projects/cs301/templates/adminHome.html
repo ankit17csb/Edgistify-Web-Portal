@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+   <body>
+      <h2 style = "text-align: center;">Welcome Admin</h2>
+		
+      {% for message in form.Table.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+      
+      {% for message in form.Opt.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+      
+      <form action = "http://localhost:5000/admin" method = post>
+         <fieldset>
+            <legend>Contact Form</legend>
+            {{ form.hidden_tag() }}
+            
+            <div style = font-size:20px; font-weight:bold; margin-left:150px;>
+              
+               
+               <br>{{ form.Table.label }} {{ form.Table }}<br>
+               
+               
+               
+               {{ form.Opt.label }}<br>
+               {{ form.Opt }}
+               <br>
+               {{ form.submit }}
+            </div>
+            
+         </fieldset>
+      </form>
+   </body>
+</html>
