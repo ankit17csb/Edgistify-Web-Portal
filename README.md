@@ -1,9 +1,5 @@
 # Edgistify-Web-Portal
-
-
-
-
-
+A web application with mobile friendly UI where anyone can come and register.Users can login to that portal and post something about the industry. Other users can view the posts and the comments on the same.
 
 
 #This web portal is named "Edgistify Industrial Web Portal" which provides basic functionality as described below:
